@@ -3,7 +3,7 @@ package ch05.sec07;
 public class MultidimensionalArrayByValueListExample {
 	public static void main(String[] args) {
 		//2차원 배열 생성
-		int[][] scores = {
+		int[][] scores = {		//선언문에도 2차원 배열인 것 표시
 				{ 80, 90, 96 },
 				{ 76, 88 }
 		};
@@ -27,7 +27,7 @@ public class MultidimensionalArrayByValueListExample {
 		double class1Avg = (double) class1Sum / scores[0].length;
 		System.out.println("첫번째 반의 평균 점수: " + class1Avg);
 		
-		//첫번째 반의 평균 점수 구하기
+		//두번째 반의 평균 점수 구하기
 		int class2Sum = 0;
 		for(int i=0; i<scores[1].length; i++) {
 			class2Sum += scores[1][i];
@@ -40,7 +40,7 @@ public class MultidimensionalArrayByValueListExample {
 		int totalSum = 0;
 		for(int i=0; i<scores.length; i++) {			//반의 수만큼 반복
 			totalStudent += scores[i].length;			//반의 학생수 합산
-			for(int k=0; k<scores[i].length; k++) {	//해당 반의 학생 수만큼 반복
+			for(int k=0; k<scores[i].length; k++) {		//해당 반의 학생 수만큼 반복
 				totalSum += scores[i][k];				//학생 점수 합산
 			}
 		}

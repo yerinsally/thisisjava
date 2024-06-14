@@ -12,6 +12,20 @@ public class ReferenceVariableCompareExample {
 	
 		System.out.println(arr1 == arr2); 	//arr1과 arr2 변수 값이 동일한 번지인지 검사
 		System.out.println(arr2 == arr3);	//arr2와 arr3 변수가 같은 배열을 참조하는지 검사
+		System.out.println();
+		
+		int [] stair;
+		stair = new int[3];
+		stair[0] = 100;
+		stair[1] = 200;
+		stair[2] = 300;
+		
+		System.out.println(stair[0]);
+		System.out.println(stair[1]);
+		System.out.println(stair[2]);
+		System.out.println();
+
+		for(int i=0; i<=2; i++) System.out.println(stair[i]);		//간단한 코드
 	}
 }
 

@@ -38,7 +38,7 @@ public class ArrayCreateByNewExample {
 		
 		//배열 변수 선언과 배열 생성
 		String[] arr3 = new String[3];
-		//배열 항목의 초기값 출력
+		//배열 항목의 초기값 출력 : null(p174)
 		for(int i=0; i<3; i++) {
 			System.out.print("arr3[" + i + "] : " + arr3[i] + ", ");
 		}

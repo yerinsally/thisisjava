@@ -14,4 +14,10 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<variableList>
+		<variable>
+			<name>thisisjava</name>
+			<value>file:/C:/Users/Student/git/thisisjava</value>
+		</variable>
+	</variableList>
 </projectDescription>
