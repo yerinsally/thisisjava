@@ -18,10 +18,10 @@ public class WeekExample {
 			case 1:  today = Week.SUNDAY ;        	break;
 			case 2:  today = Week.MONDAY;       	break;
 			case 3:  today = Week.TUESDAY;       	break;
-			case 4:  today = Week.WEDNESDAY; 	break;
-			case 5:  today = Week.THURSDAY;   	break;
+			case 4:  today = Week.WEDNESDAY; 		break;
+			case 5:  today = Week.THURSDAY;   		break;
 			case 6:  today = Week.FRIDAY;         	break;				
-			case 7:  today = Week.SATURDAY;   	break;		
+			case 7:  today = Week.SATURDAY;   		break;		
 		}
 		
 		//열거 타입 변수를 사용
@@ -30,5 +30,16 @@ public class WeekExample {
 		} else {
 			System.out.println("열심히 자바 공부합니다.");
 		}
+		
+		//년 월 일 시 분 초
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH)+1;
+		int day = cal.get(Calendar.DAY_OF_MONTH);
+		//int week = cal.get(Calendar.DAY_OF_WEEK);
+		int hour = cal.get(Calendar.HOUR);
+		int minute = cal.get(Calendar.MINUTE);
+		int second = cal.get(Calendar.SECOND);
+		
+		System.out.printf("%d년 %d월 %d일 %s %d시 %d분 %d초", year, month, day, today, hour, minute, second);
 	}
 }
