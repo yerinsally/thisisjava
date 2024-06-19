@@ -24,6 +24,8 @@ public class ComputerExample {
 		//sum 메소드 호출시 배열을 제공하고
 		//합산 결과를 리턴받아 result4 변수에 대입
 		int result4 = myCom.sum(new int[] { 1, 2, 3, 4, 5 });
-		System.out.println("result4: " + result4);				
+		System.out.println("result4: " + result4);
+		
+		System.out.println(myCom.sum(1,2,3,4,5,6,7,8,9,10));
 	}
 }

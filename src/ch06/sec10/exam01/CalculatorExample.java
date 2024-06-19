@@ -9,5 +9,18 @@ public class CalculatorExample {
 		System.out.println("result1 : " + result1);
 		System.out.println("result2 : " + result2);
 		System.out.println("result3 : " + result3);
+		
+		
+		Calculator calc = new Calculator();
+		int result4 = calc.plus(2, 3);
+		System.out.println("result4 : " + result4);
+		
+		System.out.println("calc.pi : " + calc.pi);
+		
+		calc.pi = 5.14159;		//메소드 영역의 pi 값 수정
+		System.out.println("calc.pi : " + calc.pi);
+		
+		Calculator calc2 = new Calculator();
+		System.out.println("calc2.pi : " + calc2.pi);
 	}
 }

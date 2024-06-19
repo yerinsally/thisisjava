@@ -8,7 +8,7 @@ public class A {
 	//private 접근 제한을 갖는 필드 선언
 	private int field3;
 
-	// 생성자 선언
+	// 생성자 선언 : 클래스 내부일 경우 접근 제한자의 영향을 받지 않음
 	public A() {
 		field1 = 1;   		//o
 		field2 = 1;   		//o

@@ -21,7 +21,7 @@ public class promblem05 {
 					break;
 				}
 			}
-			//중복되지 않으면 배열에 숫자 넣기 : 
+			//중복되지 않으면 배열에 숫자 넣기 : 조건식이 true일 때 실행되도록
 			if (duplicate == false) {
 				data[i] = num;
 				i++;

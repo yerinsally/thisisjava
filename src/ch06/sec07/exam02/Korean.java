@@ -6,7 +6,7 @@ public class Korean {
 	String name;
 	String ssn;
 
-	//생성자 선언
+	//(인자값이 있는) 생성자 선언
 	public Korean(String n, String s) {
 	  name = n;
 	  ssn = s;

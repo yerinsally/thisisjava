@@ -1,4 +1,4 @@
-package ch06.sec12.hyundai;
+ package ch06.sec12.hyundai;
 
 //import 문으로 다른 패키지 클래스 사용을 명시
 import ch06.sec12.hankook.SnowTire;

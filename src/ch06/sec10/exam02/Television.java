@@ -7,5 +7,5 @@ public class Television {
 
 	static {
 		info = company + "-" + model;
-	}
+	}	//클래스 로딩되면 실행되는 구문
 }

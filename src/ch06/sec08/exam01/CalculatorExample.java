@@ -3,7 +3,7 @@ package ch06.sec08.exam01;
 public class CalculatorExample {
 	public static void main(String[] args) {
 		//Calculator 객체 생성
-		Calculator myCalc = new Calculator();
+		Calculator myCalc = new Calculator();	//기본 생성자
 		
 		//리턴값이 없는 powerOn 메소드 호출
 		myCalc.powerOn();
@@ -19,6 +19,9 @@ public class CalculatorExample {
 		//나눗셈 결과를 리턴받아 result2 변수에 대입
 		double result2 = myCalc.divide(x, y);
 		System.out.println("result2: " + result2);
+		
+		System.out.println("뺄셈: " + myCalc.minus(11,8));
+		System.out.println("곱셈: " + myCalc.multi(11,8));
 
 		//리턴값이 없는 powerOff 메소드 호출
 		myCalc.powerOff();
