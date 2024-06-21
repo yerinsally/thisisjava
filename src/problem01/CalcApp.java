@@ -28,7 +28,7 @@ public class CalcApp {
         	int num2 = Integer.parseInt(arr[2]);
         	
     		if("+".equals(arr[1])) {
-        		Add add = new Add();
+        		Add add = new Add();	//객체 생성
         		add.setValue(num1, num2);
         		System.out.println(">> " + add.calculate());
         	}else if("-".equals(arr[1])) {
