@@ -9,7 +9,7 @@ public class ServiceExample {
 		service.defaultMethod1();
 		System.out.println();
 		service.defaultMethod2();
-		System.out.println();
+		System.out.println(); 
 		
 		//정적 메소드 호출
 		Service.staticMethod1();

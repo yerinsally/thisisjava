@@ -17,7 +17,11 @@ public class Account {
     	money += balance;
     }
     public void withdraw(int balance) {
-    	money -= balance;
+    	if(money < balance) {
+    		System.out.println("한도 초과");
+    	}else {
+        	money -= balance;
+    	}
     }
     public void showBalance() {
     	System.out.print(money);

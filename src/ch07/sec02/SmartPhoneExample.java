@@ -18,7 +18,7 @@ public class SmartPhoneExample {
 		myPhone.sendVoice("여보세요");
 		myPhone.receiveVoice("안녕하세요! 저는 홍길동인데요");
 		myPhone.sendVoice("아~ 네 반갑습니다.");
-		myPhone.hangUp();
+		myPhone.hangUp();	//부모가 갖고 있는 메소드
 
 		//SmartPhone의 메소드 호출
 		myPhone.setWifi(true);

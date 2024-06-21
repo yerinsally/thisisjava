@@ -1,6 +1,6 @@
 package ch08.sec09;
 
-public class InterfaceCImpl implements InterfaceC {
+public class InterfaceCImpl implements InterfaceC {	//구현객체
 	public void methodA() {
 		System.out.println("InterfaceCImpl-methodA() 실행");
 	}	
