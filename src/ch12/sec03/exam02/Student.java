@@ -14,7 +14,7 @@ public class Student {
 
 	@Override
 	public int hashCode() {
-		int hashCode = no + name.hashCode();
+		int hashCode = no + name.hashCode();	//학생 번호와 이름 해시코드를 합한 새로운 해시코드 리턴(번호와 이름이 같으면 동일한 해시코드가 생성됨)
 		return hashCode;
 	}
 	

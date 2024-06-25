@@ -9,7 +9,7 @@ public class SmartPhone {
 		this.os = os;
 	}
 	
-	@Override
+	@Override	//toString() 메소드 재정의해서 제조사와 운영체제가 결합된 문자열 리턴
 	public String toString() {
 		return company + ", " + os;
 	}

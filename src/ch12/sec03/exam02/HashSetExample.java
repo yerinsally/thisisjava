@@ -18,5 +18,8 @@ public class HashSetExample {
 		Student s3 = new Student(2, "홍길동");
 		hashSet.add(s3);
 		System.out.println("저장된 객체수: " + hashSet.size());
+		
+		Object obj = new Object();
+		System.out.println(obj.toString());		//toString 생략해도 자동으로 불러옴
 	}
 }
