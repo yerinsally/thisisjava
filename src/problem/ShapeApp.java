@@ -19,7 +19,7 @@ public class ShapeApp {
             System.out.println( "area: " + sList.get(i).getArea() );
             System.out.println( "perimeter: " + sList.get(i).getPerimeter() );
             
-            if( sList.get(i) instanceof Resizeable ) {		//Resizable(인터페이스) 같은 타입인지 확인
+            if( sList.get(i) instanceof Resizeable ) {		//Resizable(인터페이스) 객체와 같은 타입인지 확인
                 ((Resizeable)sList.get(i)).resize(0.5);		//기본 타입(int, String) / 내가 선언한 참조 타입(객체)
                 
                 System.out.println( "new area: " + sList.get(i).getArea() );
