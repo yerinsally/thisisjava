@@ -39,7 +39,7 @@ public class CreateJsonExample {
 		System.out.println(json);
 		
 		//파일로 저장
-		Writer writer = new FileWriter("C:/Temp/member.json", Charset.forName("UTF-8"));
+		Writer writer = new FileWriter("C:/Users/Student/git/thisisjava/src/ch19/sec06/member.json", Charset.forName("UTF-8"));
 		writer.write(json);
 		writer.flush();
 		writer.close();

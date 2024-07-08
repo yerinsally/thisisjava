@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class FriendApp {
+public class factorial {
     public static void main(String[] args) {
     	
 		//ArrayList 컬렉션 생성 : 제네릭

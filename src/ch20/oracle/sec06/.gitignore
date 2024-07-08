@@ -1,2 +1,7 @@
 /BoardInsertExample.class
 /UserInsertExample.class
+/UserUpdateExample.class
+/UserDeleteExample.class
+/AuthorInsertExample.class
+/Author.class
+/AuthorSelectExample.class

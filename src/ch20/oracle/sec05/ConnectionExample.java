@@ -13,9 +13,9 @@ public class ConnectionExample {
 			
 			//연결하기
 			conn = DriverManager.getConnection(
-				"jdbc:oracle:thin:@localhost:1521/orcl", 
-				"java", 
-				"oracle"
+				"jdbc:oracle:thin:@localhost:1521/xe", 
+				"webdb", 	//계정
+				"webdb"		//비번
 			);	
 			
 			System.out.println("연결 성공");

@@ -17,7 +17,7 @@ public class ChatClient {
 	
 	//메소드: 서버 연결
 	public  void connect() throws IOException {
-		socket = new Socket("localhost", 50001);
+		socket = new Socket("172.20.30.186", 50001);
 		dis = new DataInputStream(socket.getInputStream());
 		dos = new DataOutputStream(socket.getOutputStream());
 		System.out.println("[클라이언트] 서버에 연결됨");		

@@ -22,7 +22,7 @@ public class ParseJsonExample {
 		
 		//속성 정보 읽기
 		System.out.println("id: " + root.getString("id"));
-		System.out.println("name: " + root.getString("id"));
+		System.out.println("name: " + root.getString("name"));
 		System.out.println("age: " + root.getInt("age"));
 		System.out.println("student: " + root.getBoolean("student"));
 		

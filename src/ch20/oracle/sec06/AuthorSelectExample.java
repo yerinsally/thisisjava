@@ -1,4 +1,4 @@
-package ch20.oracle.sec09.exam01;
+package ch20.oracle.sec06;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserSelectExample {
+public class AuthorSelectExample {
 	public static void main(String[] args) {
 		Connection conn = null;
 		try {
@@ -24,8 +24,8 @@ public class UserSelectExample {
 			
 			//매개변수화된 SQL문 작성
 			String sql = "" +
-				"SELECT userid, username, userpassword, userage, useremail " +
-				"FROM users";
+				"SELECT author_id, author_name, author_desc " +
+				"FROM AUTHOR";
 			
 			//PreparedStatement 얻기 및 값 지정
 			PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -33,25 +33,23 @@ public class UserSelectExample {
 			//SQL문 실행 후, ResultSet을 통해 데이터 읽기
 			ResultSet rs = pstmt.executeQuery();
 			
-			List<User> list = new ArrayList<>();
+			List<Author> list = new ArrayList<>();
 			
 			while(rs.next()) {						//1개의 데이터 행을 가져왔을 경우
-				User user = new User();				
-				user.setUserId(rs.getString("userid"));
-				user.setUserName(rs.getString("username"));
-				user.setUserPassword(rs.getString("userpassword"));
-				user.setUserAge(rs.getInt(4));       //컬럼 순번을 이용
-				user.setUserEmail(rs.getString(5));  //컬럼 순번을 이용				
+				Author author = new Author();				
+				author.setAuthorId(rs.getString("author_id"));
+				author.setAuthorName(rs.getString("author_name"));
+				author.setAuthorDesc(rs.getString("author_desc"));			
 				//System.out.println(user);
-				list.add(user);
+				list.add(author);
 			}
 			rs.close();
 			
 			//PreparedStatement 닫기
 			pstmt.close();
 			
-			for(User user : list) {
-				System.out.println(user);
+			for(Author author : list) {
+				System.out.println(author);
 			}
 			
 		} catch (Exception e) {
